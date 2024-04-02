@@ -3,14 +3,16 @@ const city = "murree";
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 function fetchWeather() {
-    fetch(apiUrl)
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        console.log(data);
-      })
-      .catch(error => {
-        console.error("Error fetching weather:", error);
-      });
-  }
+  fetch(apiUrl)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error("Error fetching weather:", error);
+    });
+}
+
+fetchWeather();
