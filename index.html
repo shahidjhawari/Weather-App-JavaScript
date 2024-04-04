@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    
+
   </style>
 </head>
+
 <body>
   <div class="container">
     <div class="row justify-content-center">
@@ -17,22 +19,23 @@
         <div class="weather-container">
           <h2 class="text-center mb-4 weather-heading own-text">Weather App</h2>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name" aria-describedby="button-addon2">
+            <input type="text" id="weather-input" class="form-control" placeholder="Enter city name"
+              aria-label="Enter city name" aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary own-text" type="button" id="button-addon2">Search</button>
+              <button class="btn btn-outline-secondary own-text" type="button" id="button">Search</button>
             </div>
           </div>
           <div class="weather-info">
-            <img src="img/clear.png" alt="Weather Image" class="weather-image">
-            <h2 class="own-text">Temperature: 25°C</h2>
+            <img src="img/clear.png" alt="Weather Image" id="weather-image" class="weather-image">
+            <h2 class="own-text" id="temp">Temperature: 25°C</h2>
             <div class="wind-humidity">
               <div class="wind own-text">
                 <h3>Wind</h3>
-                <p>10 km/h</p>
+                <p id="wind">10 km/h</p>
               </div>
               <div class="humidity own-text">
                 <h3>Humidity</h3>
-                <p >60%</p>
+                <p id="humidity">60%</p>
               </div>
             </div>
           </div>
@@ -41,4 +44,5 @@
     </div>
   </div>
 </body>
+
 </html>
