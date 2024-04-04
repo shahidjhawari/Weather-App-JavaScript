@@ -22,10 +22,11 @@
             <input type="text" id="weather-input" class="form-control" placeholder="Enter city name"
               aria-label="Enter city name" aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary own-text" type="button" id="button">Search</button>
+              <button id="weather-btn" class="btn btn-outline-secondary own-text" type="button">Search</button>
             </div>
           </div>
-          <div class="weather-info">
+          <span class="own-text" style="display: none;">Invalid City</span>
+          <div class="weather-info" style="display: none;">
             <img src="img/clear.png" alt="Weather Image" id="weather-image" class="weather-image">
             <h2 class="own-text" id="city">London</h2>
             <h2 class="own-text" id="temp">Temperature: 25°C</h2>

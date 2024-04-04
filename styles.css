@@ -2,12 +2,12 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 950px;
+    height: 100vh;
 }
 
 body::before {
     content: "";
-    background: url(img/bg.jpg) repeat-y bottom center fixed;
+    background: url(img/bg.jpg)  bottom center fixed;
     background-size: cover;
     position: absolute;
     top: 0;
