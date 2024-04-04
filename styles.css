@@ -2,19 +2,19 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 950px;
 }
 
 body::before {
     content: "";
-    background: url(img/bg.jpg) no-repeat center center fixed;
+    background: url(img/bg.jpg) repeat-y bottom center fixed;
     background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(10px);
+    filter: blur(15px);
     z-index: -1;
 }
 
